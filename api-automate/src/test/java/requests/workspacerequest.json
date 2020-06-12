@@ -1,0 +1,88 @@
+{
+    "actions": [
+        {
+			"actionId": "send_mail",
+			"appId": "56bdb323f3e0ce2491d66197",
+			"dynamicResponseFields": [],
+			"id": "aio_w_18jd3wv1h7m9o4_5edcbe755203b74bd1cf1629_send_mail",
+			"params": 
+			[
+				{
+					"data": {"value": "plain"},
+					"dataType": "string",
+					"datatype": "string",
+					"id": "contentType",
+					"inputType": "select",
+					"required": true,
+					"value": "plain"
+				},
+				{
+					"data": {"value": "[[{\"activityId\":\"aio_w_1bbql614lq8lz_5edcbe755203b74bd1cf1629_new-conversation\",\"appId\":\"gmail\",\"fieldId\":\"fromName\",\"fieldName\":\"From Name\"}]]"},
+					"datatype": "string",
+					"id": "fromName",
+					"inputType": "input",
+					"required": false,
+					"value": "[[{\"activityId\":\"aio_w_1bbql614lq8lz_5edcbe755203b74bd1cf1629_new-conversation\",\"appId\":\"gmail\",\"fieldId\":\"fromName\",\"fieldName\":\"From Name\"}]]"
+				},
+				{
+					"data": {"value": "[[{\"activityId\":\"aio_w_1bbql614lq8lz_5edcbe755203b74bd1cf1629_new-conversation\",\"appId\":\"gmail\",\"fieldId\":\"fromEmail\",\"fieldName\":\"From Email\"}]]"},
+					"datatype": "string",
+					"id": "from",
+					"inputType": "input",
+					"required": false,
+					"value": "[[{\"activityId\":\"aio_w_1bbql614lq8lz_5edcbe755203b74bd1cf1629_new-conversation\",\"appId\":\"gmail\",\"fieldId\":\"fromEmail\",\"fieldName\":\"From Email\"}]]"
+				},
+				{
+					"data": [{"id": "0", "value": "?"}],
+					"datatype": "string",
+					"id": "to",
+					"inputType": "multiinput",
+					"required": false
+				},
+				{
+					"data": {"value": "[[{\"activityId\":\"aio_w_1bbql614lq8lz_5edcbe755203b74bd1cf1629_new-conversation\",\"appId\":\"gmail\",\"fieldId\":\"Subject\",\"fieldName\":\"Subject\"}]]"},
+					"datatype": "string",
+					"id": "subject",
+					"inputType": "input",
+					"required": true,
+					"value": "[[{\"activityId\":\"aio_w_1bbql614lq8lz_5edcbe755203b74bd1cf1629_new-conversation\",\"appId\":\"gmail\",\"fieldId\":\"Subject\",\"fieldName\":\"Subject\"}]]"
+				},
+				{
+					"data": {"value": "[[{\"activityId\":\"aio_w_1bbql614lq8lz_5edcbe755203b74bd1cf1629_new-conversation\",\"appId\":\"gmail\",\"fieldId\":\"body\",\"fieldName\":\"Body\"}]]"},
+					"datatype": "string",
+					"id": "email_body",
+					"inputType": "input",
+					"required": true,
+					"value": "[[{\"activityId\":\"aio_w_1bbql614lq8lz_5edcbe755203b74bd1cf1629_new-conversation\",\"appId\":\"gmail\",\"fieldId\":\"body\",\"fieldName\":\"Body\"}]]"
+				}
+			],
+			"parsedSampleData": [],
+			"sampleData": {},
+			"userappId": "5edcbe755203b74bd1cf1629"
+		}
+	],
+	"name": "Gmail Bot #",
+	"status": "disabled",		
+	"trigger": {
+		"appId": "56bdb323f3e0ce2491d66197",
+		"dynamicResponseFields": [],
+		"id": "aio_w_1bbql614lq8lz_5edcbe755203b74bd1cf1629_new-conversation",
+		"params": 
+		[
+			{
+				"data": {"isCustom": false, "name": "INBOX", "value": "INBOX"},
+				"datatype": "string",
+				"id": "label",
+				"inputType": "select",
+				"required": true,
+				"value": "INBOX"
+			}
+		],
+		"parsedSampleData": [],
+		"sampleData": {},
+		"triggerId": "new-conversation",
+		"userappId": "5edcbe755203b74bd1cf1629"
+	},
+	"version": "1.1",
+	"webhookStatus": "disabled"
+}
